@@ -1,4 +1,8 @@
 # Niryo-One-Robot-Arm-Simulation
+❗ Disclaimer: this code was submitted as part of my assessed work required to pass my ELE3005M Robotics and Automation university module. It represents origional work and may include additions added by my project group members; I therefore cannot claim to be the sole author of this work (although to be honest I was the main contributer :/).
+
+![topGIF](./images_and_videos/robot_gif.gif)
+
 ## Brief description
 ROS and the MoveIt python wrapper were utilised to execute a simple box stacking task in simulation, visualised in rviz. The task is to pick up a set of boxes and place them in a stack on the other side of a barrier. 
 
@@ -19,6 +23,9 @@ source ~/catkin_ws/devel/setup.bash
 ```
 
 ## Methodology
-As mentioned above, the scripts uses the MoveIt Move Group Python Interface and is loosely based off of [this tutorial](http://docs.ros.org/en/kinetic/api/moveit_tutorials/html/doc/move_group_python_interface/move_group_python_interface_tutorial.html)
+As mentioned above, the scripts uses the MoveIt Move Group Python Interface and is loosely based off of [this tutorial](http://docs.ros.org/en/kinetic/api/moveit_tutorials/html/doc/move_group_python_interface/move_group_python_interface_tutorial.html). The program layout/process is simple, and is represented in the following flow chart:
+
+![flowchart](./images_and_videos/flowchart.png)
 
 ## Results
+The stacking task is acheived as expected using the hardcoded scene layout and stacking locations. The solution to the task is, at this stage, basic. It can definately be improved and more features can be implimeted; these areas are touched upon in the [video demenstration](./images_and_videos/demo_video.m4v).
